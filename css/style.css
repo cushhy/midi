@@ -1224,6 +1224,12 @@ footer {
   padding: 1.875rem 0.625rem;
 }
 
+@media (max-width: 56.875rem) {
+  .popup__body {
+    width: 90%;
+  }
+}
+
 .popup__content {
   padding: 1.25rem;
   position: relative;
@@ -1235,7 +1241,7 @@ footer {
 .popup__close {
   position: absolute;
   top: 0;
-  right: -5%;
+  right: -6%;
   font-family: PR-Bold;
   font-size: 1.5625rem;
   text-decoration: none;
@@ -1311,22 +1317,6 @@ footer {
 
 .popup-check__box p a {
   color: #888888;
-}
-
-.popup-check__box input {
-  margin: 0 1rem 0 0;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #E7EBF2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-@media (max-width: 37.5em) {
-  .popup-check__box input {
-    width: 15px;
-    height: 15px;
-  }
 }
 
 .popup__subtitle {
