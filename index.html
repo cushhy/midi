@@ -42,7 +42,7 @@
                 </a>
                 <div class="header__link work">*Работаем по всей России</div>
                 <div class="header__link button">
-                    <a href="#" data-scroll="#contact">Заказать консультацию</a>
+                    <a href="#" data-modal="#consultacion">Заказать консультацию</a>
                 </div>
             </div>
         </div>
@@ -56,7 +56,7 @@
                     <a href="#" data-scroll="#katalog">Перейти в каталог</a>
                 </div>
                 <div class="header__link button mob">
-                    <a href="#">Заказать консультацию</a>
+                    <a href="#" data-modal="#consultacion">Заказать консультацию</a>
                 </div>
             </div>
             <div class="intro__img">
@@ -128,7 +128,7 @@
                     </div>
                     <div class="item__buttons">
                         <div class="item__buy">
-                            <a href="#">Купить</a>
+                            <a href="#" data-modal="#popup">Купить</a>
                         </div>
                         <div class="item__more">
                             <a href="javascript:void(0)">Подробнее</a>
@@ -194,7 +194,7 @@
                     </div>
                     <div class="item__buttons">
                         <div class="item__buy">
-                            <a href="#">Купить</a>
+                            <a href="#" data-modal="#popup">Купить</a>
                         </div>
                         <div class="item__more">
                             <a href="javascript:void(0)">Подробнее</a>
@@ -255,7 +255,7 @@
                     </div>
                     <div class="item__buttons">
                         <div class="item__buy">
-                            <a href="#">Купить</a>
+                            <a href="#" data-modal="#popup">Купить</a>
                         </div>
                         <div class="item__more">
                             <a href="javascript:void(0)">Подробнее</a>
@@ -419,6 +419,62 @@
             </form>
         </div>
     </footer>
+
+    <div class='popup' id='popup'>
+        <div class='popup__body'>
+            <div class='popup__content'>
+                <a href='#' class='popup__close' data-close>X</a>
+                <div class="popup__title">Оставьте заявку на покупку</div>
+                <form class="popup__form">
+                    <input type="text" class="popup__input name" placeholder="Имя" required>
+                    <input type="text" class="popup__input city" placeholder="Город" required>
+                    <input type="text" class="popup__input number" placeholder="Номер" required>
+                    <a href="#" class="popup__button" data-modal="#thankyou">Позвоните мне</a>
+                    <div class="popup-check__box">
+                        <input type="checkbox">
+                        <p>Я принимаю условия <a href="#">Пользовательского соглашения</a>
+                            и даю свое согласие на обработку
+                            моих персональных данных в соответствии с
+                            <a href="#">Политикой конфиденциальности</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class='popup' id='consultacion'>
+        <div class='popup__body'>
+            <div class='popup__content'>
+                <a href='#' class='popup__close' data-close>X</a>
+                <div class="popup__title">Оставьте заявку на консультацию</div>
+                <form class="popup__form">
+                    <input type="text" class="popup__input name" placeholder="Имя" required>
+                    <input type="text" class="popup__input city" placeholder="Город" required>
+                    <input type="text" class="popup__input number" placeholder="Номер" required>
+                    <a href="#" class="popup__button" data-modal="#thankyou">Позвоните мне</a>
+                    <div class="popup-check__box">
+                        <input type="checkbox">
+                        <p>Я принимаю условия <a href="#">Пользовательского соглашения</a>
+                            и даю свое согласие на обработку
+                            моих персональных данных в соответствии с
+                            <a href="#">Политикой конфиденциальности</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class='popup' id='thankyou'>
+        <div class='popup__body'>
+            <div class='popup__content'>
+                <a href='#' class='popup__close' data-close>X</a>
+                <div class="popup__title">Спасибо за Ваш заказ!</div>
+                <div class="popup__subtitle">В ближайшее время с Вами свяжется наш менеджер!</div>
+            </div>
+        </div>
+    </div>
 
     <!-- !js -->
     <script src="assets/js/jquery.min.js"></script>
